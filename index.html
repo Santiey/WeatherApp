@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css" />
     <title>WeatherApp</title>
+    <div class="weather-app">
 </head>
 <body>
     <header>
 <form>
-    <input type="search" placeholder="Enter City..." required/>
-    <input type="submit" value="Search"/>
+    <input type="search" placeholder="Enter City..." required class="search-form-input"/>
+    <input type="submit" value="Search" class="search-form-button"/>
 </form>
     </header>
-    <main>  
-    <h1>Paris</h1>
-    <p>
+    <main> 
+        <div class="weather-data">
+            <div>
+    <h1 class="weather-city">Paris</h1>
+    <p class="weather-details">
         Sunday 19:56, Cloudy 
         <br />
-        Humidity: 66%, Wind 3.13km/hr
+        Humidity: <strong>60%</strong>, Wind <strong>3.37km/hr</strong>/hr
     </p>
-🌥️12°C
+</div>
+        <div class="weather-container">
+    <div class="weather-icon">🌥️</div>
+    <div class="weather-temp">12</div>
+    <div class="weather-unit">°C</div>
+    </div>
+    </div>
     </main>
     <footer>
         Coded by 
@@ -28,4 +38,5 @@
         Hosted by <a href="https://santiey-weather-app.netlify.app/" target="_blank">Netlify</a>
     </footer>
 </body>
+</div>
 </html>
