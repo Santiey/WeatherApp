@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>WeatherApp</title>
     <div class="weather-app">
 </head>
 <body>
     <header>
-<form>
-    <input type="search" placeholder="Enter City..." required class="search-form-input"/>
+<form id="search-form">
+    <input type="search" placeholder="Enter City..." required class="search-form-input" id="search-form-input"/>
     <input type="submit" value="Search" class="search-form-button"/>
 </form>
     </header>
     <main> 
         <div class="weather-data">
             <div>
-    <h1 class="weather-city">Paris</h1>
+    <h1 class="weather-city" id="city">Paris</h1>
     <p class="weather-details">
         Sunday 19:56, Cloudy 
         <br />
@@ -26,7 +27,7 @@
 </div>
         <div class="weather-container">
     <div class="weather-icon">🌥️</div>
-    <div class="weather-temp">12</div>
+    <div class="weather-temp" id="temp">12</div>
     <div class="weather-unit">°C</div>
     </div>
     </div>
