@@ -7,7 +7,6 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-   
     box-shadow: 0 30px 50px rgba(116, 93, 169, 0.08);
     border-radius: 18px;
     padding: 35px;
@@ -19,7 +18,7 @@ header {
 }
 
 .search-form-button {
-    background: #885df1;
+    background: #e0eb67;
     padding: 15px 30px;
     border: none;
     font-size: 16px;
